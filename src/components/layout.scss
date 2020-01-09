@@ -2,3 +2,75 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.turn {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #1a1a1a;
+    z-index: 1200;
+    display: none;
+
+    span {
+        font-size: 1.5em;
+        position: relative;
+        float: left;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+    .turn {
+        display: block;
+    }
+}
+
+// mobile
+@media (max-width: 599px) {
+    #intro {
+        margin-top: 2em;
+    }
+}
+
+// tublet-portrait
+@media (min-width: 600px) {
+    #intro {
+        margin-top: 50px;
+    }
+}
+
+// tablet-landscape
+@media (min-width: 900px) {
+    #intro {
+        margin-top: 50px;
+    }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+    #intro {
+        margin-top: 50px;
+    }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+    #intro {
+        margin-top: 60px;
+    }
+}

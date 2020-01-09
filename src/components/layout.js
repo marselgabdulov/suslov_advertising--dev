@@ -1,33 +1,28 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Nav from "./Nav/Nav"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <div className="turn">
+        <span>Пожалуйста переверните</span>
+      </div>
+      <Nav />
       <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
     </>
   )
 }
 
 export default Layout
+
+{
+  /* <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer> */
+}
