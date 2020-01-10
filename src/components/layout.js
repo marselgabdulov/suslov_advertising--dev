@@ -1,9 +1,8 @@
 import React from "react"
-
 import Nav from "./Nav/Nav"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   return (
     <>
       <div className="turn">
