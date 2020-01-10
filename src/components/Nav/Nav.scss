@@ -102,7 +102,17 @@
 }
 
 // desktop/laptop
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .nav {
+        width: 80%;
+        margin: auto 10%;
+        height: 60px;
+
+        .nav__links {
+            width: 70%;
+        }
+    }
+}
 
 // desktop x-large
 @media (min-width: 1800px) {
