@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IntroImage from "../images/professor.svg"
+import AudioImage from "../images/audio.svg"
 
 function IndexPage() {
   return (
@@ -26,12 +27,20 @@ function IndexPage() {
           }}
         ></div>
       </section>
-      <section className="section" id="audio">
-        <p>
-          <b>Аудио реклама в ВК</b> это аудио запись длинной до 30 секунд,
-          которое запускается между треками в момент, когда человек слушает
-          музыку на любом из устройств (компьютере, смартфоне или планшете).
-        </p>
+      <section className="audio" id="audio">
+        <div
+          className="audio__image"
+          style={{
+            backgroundImage: `url(${AudioImage})`,
+          }}
+        ></div>
+        <div className="audio__text">
+          <p>
+            <h2>Аудио реклама в ВК</h2> это аудио запись длинной до 30 секунд,
+            которое запускается между треками в момент, когда человек слушает
+            музыку на любом из устройств (компьютере, смартфоне или планшете).
+          </p>
+        </div>
       </section>
       <section className="section" id="video">
         Видео

@@ -52,7 +52,8 @@ body {
   }
 }
 
-.intro__image {
+.intro__image,
+.audio__image {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -75,7 +76,7 @@ body {
   p {
     font-size: 18px;
     line-height: 28px;
-    text-align: center;
+    text-align: left;
   }
 
   section {
@@ -85,10 +86,10 @@ body {
 
   .intro {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 80%;
     margin-left: 10%;
-    margin-top: 2em;
+    margin-top: 1em;
     height: auto;
   }
 
@@ -104,6 +105,24 @@ body {
   }
 
   .intro__image {
+    height: 40vh;
+  }
+
+  .audio {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .audio__text {
+    width: 100%;
+    height: auto;
+  }
+
+  .audio__image {
+    width: 100%;
     height: 40vh;
   }
 }
@@ -127,7 +146,7 @@ body {
 
   .intro {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 80%;
     margin-left: 10%;
     margin-top: 2em;
@@ -149,6 +168,24 @@ body {
 
   .intro__image {
     margin-top: 1.4em;
+    height: 40vh;
+  }
+
+  .audio {
+    margin-top: 7.5em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .audio__text {
+    width: 100%;
+    height: auto;
+  }
+
+  .audio__image {
+    width: 100%;
     height: 40vh;
   }
 }
@@ -196,6 +233,26 @@ body {
     height: 75vh;
     width: 50%;
   }
+
+  .audio {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .audio__text {
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    align-self: center;
+  }
+
+  .audio__image {
+    width: 50%;
+    height: 40vh;
+  }
 }
 
 
@@ -205,8 +262,8 @@ body {
     display: flex;
     flex-direction: row;
     width: 90%;
-    margin-left: 5%;
-    margin-top: 5em;
+    margin-left: 10%;
+    margin-top: 10em;
     height: auto;
     text-align: left;
   }
@@ -215,7 +272,7 @@ body {
   .button {
     margin-right: 1.4em;
     width: 45%;
-    height: 75px;
+    height: 65px;
     font-size: 18px;
   }
 
@@ -232,11 +289,30 @@ body {
     height: 50vh;
     width: 45%;
   }
+
+  .audio {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .audio__text {
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    align-self: center;
+  }
+
+  .audio__image {
+    width: 50%;
+    height: 40vh;
+  }
 }
 
 // desktop x-large
 @media (min-width: 1800px) {
-
   .intro {
     display: flex;
     flex-direction: row;
@@ -246,7 +322,6 @@ body {
     height: auto;
     text-align: left;
   }
-
 
   .button {
     margin-top: 1em;
@@ -268,5 +343,25 @@ body {
   .intro__image {
     height: 50vh;
     width: 45%;
+  }
+
+  .audio {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .audio__text {
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    align-self: center;
+  }
+
+  .audio__image {
+    width: 50%;
+    height: 40vh;
   }
 }
