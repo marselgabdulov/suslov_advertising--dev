@@ -20,15 +20,15 @@ function Nav() {
       <div className="nav__links">
         <span
           className="nav__link"
-          onClick={() => scrollTo(document.getElementById("decisions"))}
+          onClick={() => scrollTo(document.getElementById("audio"))}
         >
-          Решения
+          Аудио реклама
         </span>
         <span
           className="nav__link"
-          onClick={() => scrollTo(document.getElementById("about"))}
+          onClick={() => scrollTo(document.getElementById("video"))}
         >
-          О компании
+          Видео реклама
         </span>
         <span
           className="nav__link"
