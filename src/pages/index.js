@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import IntroImage from "../images/professor.svg"
 import AudioImage from "../images/audio.svg"
 import VideoImage from "../images/video.svg"
+import StagesImage from "../images/stages.svg"
 
 function IndexPage() {
   return (
@@ -156,11 +157,27 @@ function IndexPage() {
           </li>
         </ul>
       </section>
+      <div className="attention">
+        <p>
+          В аудио и видео рекламе можно использовать музыкальное сопровождение
+        </p>
+        <p>
+          Оба вида рекламы для большего эффекта можно озвучить голосами
+          профессиональных дикторов
+        </p>
+        <a className="button">Оставить заявку</a>
+      </div>
+
+      <section className="stages" id="stages">
+        <div
+          className="stages__image"
+          style={{
+            backgroundImage: `url(${StagesImage})`,
+          }}
+        ></div>
+      </section>
       <section className="section" id="responses">
         Отзывы
-      </section>
-      <section className="section" id="stages">
-        Этапы работ
       </section>
       <section className="section" id="contacts">
         Контакты

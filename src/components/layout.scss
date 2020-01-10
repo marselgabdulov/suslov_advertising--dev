@@ -1,3 +1,5 @@
+@import "../normalize.css";
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -16,7 +18,7 @@ li {
 }
 
 li:before {
-  content: '\23FA';
+  content: "\23FA";
   color: orange;
   padding-right: 5px;
 }
@@ -70,11 +72,41 @@ li:before {
 
 .intro__image,
 .audio__image,
-.video__image {
+.video__image,
+.stages__image {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
+.attention {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  p {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 60%;
+    padding-top: 1em;
+    // font-size: 2em;
+    // line-height: 1.5em;
+    text-align: center;
+  }
+
+  .button {
+    width: 200px;
+    align-self: center;
+    margin-bottom: 2em;
+  }
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
   .turn {
@@ -111,7 +143,6 @@ li:before {
     height: auto;
   }
 
-
   .button {
     margin-top: 1em;
     width: 100%;
@@ -140,10 +171,21 @@ li:before {
     height: auto;
   }
 
+  .attention {
+    p {
+      width: 80%;
+    }
+  }
+
   .audio__image,
   .video__image {
     width: 100%;
     height: 40vh;
+  }
+
+  .stages__image {
+    width: 100%;
+    height: 50vh;
   }
 }
 
@@ -175,7 +217,6 @@ li:before {
     text-align: left;
   }
 
-
   .button {
     margin-top: 1.4em;
     width: 100%;
@@ -206,10 +247,29 @@ li:before {
     height: auto;
   }
 
+  .attention {
+    p {
+      width: 80%;
+    }
+
+    .button {
+      width: 40%;
+    }
+  }
+
   .audio__image,
   .video__image {
     width: 100%;
     height: 40vh;
+  }
+
+  .stages {
+    margin-top: 5em;
+  }
+
+  .stages__image {
+    width: 100%;
+    height: 50vh;
   }
 }
 
@@ -234,7 +294,6 @@ li:before {
     height: auto;
     text-align: left;
   }
-
 
   .button {
     margin-right: 1.4em;
@@ -279,13 +338,13 @@ li:before {
   }
 
   .audio__advantages,
-  .video__advantages {
+  .video__advantages,
+  .stages {
     width: 90%;
     margin-left: 5%;
     margin-top: 7.5em;
   }
 }
-
 
 // desktop/laptop
 @media (min-width: 1200px) {
@@ -298,7 +357,6 @@ li:before {
     height: auto;
     text-align: left;
   }
-
 
   .button {
     margin-right: 1.4em;
@@ -343,7 +401,8 @@ li:before {
   }
 
   .audio__advantages,
-  .video__advantages {
+  .video__advantages,
+  .stages {
     width: 80%;
     margin-left: 10%;
     margin-top: 7.5em;
@@ -408,9 +467,16 @@ li:before {
   }
 
   .audio__advantages,
-  .video__advantages {
+  .video__advantages,
+  .stages {
     width: 60%;
     margin-left: 20%;
     margin-top: 7.5em;
+  }
+
+  .stages__image {
+    width: 60%;
+    margin-left: 20%;
+    height: 45vh;
   }
 }
