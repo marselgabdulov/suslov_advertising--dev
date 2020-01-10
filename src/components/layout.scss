@@ -3,7 +3,23 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
 
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+  padding-bottom: 1em;
+}
+
+li:before {
+  content: '\23FA';
+  color: orange;
+  padding-right: 5px;
+}
 
 .turn {
   position: fixed;
@@ -53,7 +69,8 @@ body {
 }
 
 .intro__image,
-.audio__image {
+.audio__image,
+.video__image {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -73,7 +90,8 @@ body {
     text-align: center;
   }
 
-  p {
+  p,
+  li {
     font-size: 18px;
     line-height: 28px;
     text-align: left;
@@ -116,12 +134,14 @@ body {
     margin-left: 10%;
   }
 
-  .audio__text {
+  .audio__text,
+  .video__text {
     width: 100%;
     height: auto;
   }
 
-  .audio__image {
+  .audio__image,
+  .video__image {
     width: 100%;
     height: 40vh;
   }
@@ -134,7 +154,8 @@ body {
     line-height: 60px;
   }
 
-  p {
+  p,
+  li {
     font-size: 21px;
     line-height: 33px;
   }
@@ -179,12 +200,14 @@ body {
     margin-left: 10%;
   }
 
-  .audio__text {
+  .audio__text,
+  .video__text {
     width: 100%;
     height: auto;
   }
 
-  .audio__image {
+  .audio__image,
+  .video__image {
     width: 100%;
     height: 40vh;
   }
@@ -249,9 +272,17 @@ body {
     align-self: center;
   }
 
-  .audio__image {
+  .audio__image,
+  .video__image {
     width: 50%;
     height: 40vh;
+  }
+
+  .audio__advantages,
+  .video__advantages {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 7.5em;
   }
 }
 
@@ -305,9 +336,17 @@ body {
     align-self: center;
   }
 
-  .audio__image {
+  .audio__image,
+  .video__image {
     width: 50%;
     height: 40vh;
+  }
+
+  .audio__advantages,
+  .video__advantages {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 7.5em;
   }
 }
 
@@ -345,7 +384,8 @@ body {
     width: 45%;
   }
 
-  .audio {
+  .audio,
+  .video {
     margin-top: 10em;
     display: flex;
     flex-direction: row;
@@ -353,15 +393,24 @@ body {
     margin-left: 20%;
   }
 
-  .audio__text {
+  .audio__text,
+  .video__text {
     width: 40%;
     height: auto;
     margin-left: 10%;
     align-self: center;
   }
 
-  .audio__image {
+  .audio__image,
+  .video__image {
     width: 50%;
     height: 40vh;
+  }
+
+  .audio__advantages,
+  .video__advantages {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 7.5em;
   }
 }
