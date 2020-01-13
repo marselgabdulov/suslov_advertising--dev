@@ -5,9 +5,6 @@ import "./layout.scss"
 function Layout({ children }) {
   return (
     <>
-      <div className="turn">
-        <span>Пожалуйста переверните</span>
-      </div>
       <Nav />
       <div>
         <main>{children}</main>

@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./index.scss"
 import IntroImage from "../images/professor.svg"
 import AudioImage from "../images/audio.svg"
 import VideoImage from "../images/video.svg"
@@ -222,9 +223,9 @@ function IndexPage() {
           <li>
             <b>Экономим деньги</b>
             <br />
-            На этапе подготовки можем найти диктора за{" "}
-            <b>150 - 200</b> рублей, сами смонтировать аудио ролик и сделать
-            видео ролик всего за <b>500 - 1000</b> рублей!
+            На этапе подготовки можем найти диктора за <b>150 - 200</b> рублей,
+            сами смонтировать аудио ролик и сделать видео ролик всего за{" "}
+            <b>500 - 1000</b> рублей!
           </li>
           <li>
             <b>Работаем с маленькими бюджетами</b>
@@ -239,8 +240,9 @@ function IndexPage() {
           </li>
           <li>
             <b>Эксклюзивность данной рекламы</b>
-            <br />Пока ещё мало людей, использующих для
-            продвижения своего бизнеса аудио и видео рекламу в ВК
+            <br />
+            Пока ещё мало людей, использующих для продвижения своего бизнеса
+            аудио и видео рекламу в ВК
           </li>
         </ul>
       </section>
