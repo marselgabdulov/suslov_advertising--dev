@@ -6,7 +6,7 @@ function Nav() {
     window.scroll({
       behavior: "smooth",
       left: 0,
-      top: element.offsetTop - 50,
+      top: element.offsetTop - 100,
     })
   }
   return (
