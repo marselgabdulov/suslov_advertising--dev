@@ -1,0 +1,48 @@
+.logo {
+    font-weight: bold;
+    align-content: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+    .logo {
+        height: 20%;
+        margin-top: 50px;
+    }
+}
+
+// mobile
+@media (max-width: 599px) {
+    .logo {
+        height: 20%;
+        margin-top: 50px;
+    }
+
+}
+
+// tublet-portrait
+@media (min-width: 600px) {
+    .logo {
+        height: 20%;
+        margin-top: 50px;
+    }
+}
+
+// tablet-landscape
+@media (min-width: 900px) {
+    .logo {
+        width: 20%;
+        height: auto;
+        margin-top: -0.25em;
+        font-size: 1.4em;
+    }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {}
+
+// desktop x-large
+@media (min-width: 1800px) {}

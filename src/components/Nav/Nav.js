@@ -1,5 +1,6 @@
 import React from "react"
 import "./Nav.scss"
+import Logo from "../Logo/Logo"
 
 function Nav() {
   function scrollTo(element) {
@@ -12,13 +13,7 @@ function Nav() {
   return (
     <div className="nav">
       <div className="nav__wrapper">
-        <span
-          className="nav__logo"
-          onClick={() => scrollTo(document.getElementById("intro"))}
-        >
-          <span style={{ color: "#231d9b" }}>релама</span>
-          <span style={{ color: "#e0761f" }}>ДА</span>
-        </span>
+        <Logo />
         <div className="nav__links">
           <span
             className="nav__link"
