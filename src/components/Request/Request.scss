@@ -1,0 +1,244 @@
+.request-form * {
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+    input,
+    textarea {
+        padding: 10px 20px;
+        margin: 0;
+        border: 1px solid black;
+    }
+
+    input:active,
+    input:focus,
+    textarea:active,
+    textarea:focus {
+        outline: 0;
+        border: 1px solid black;
+        -moz-outline-style: none;
+    }
+}
+
+.request__image {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+    .request__image {
+        display: none;
+    }
+
+    .request-form {
+        .button {
+            width: 100% !important;
+        }
+    }
+}
+
+// mobile
+@media (max-width: 599px) {
+    .request-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    .request-form {
+        width: 100%;
+        height: auto;
+
+        .button {
+            width: 94%;
+            margin-left: 3%;
+            height: 65px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 1em;
+            width: 100%;
+            margin-left: 0;
+            padding: 0;
+
+            &::placeholder {
+                padding-left: 0em;
+            }
+        }
+
+        input {
+            height: 2em;
+        }
+
+        textarea {
+            &::placeholder {
+                padding-top: 0.25em;
+            }
+        }
+    }
+
+    .request__image {
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+// tublet-portrait
+@media (min-width: 600px) {
+    .request-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    .request-form {
+        width: 100%;
+        height: auto;
+
+        .button {
+            width: 94%;
+            margin-left: 3%;
+            height: 65px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 1em;
+            width: 100%;
+            margin-left: 0;
+
+            &::placeholder {
+                padding-left: 0em;
+            }
+        }
+
+        input {
+            height: 2em;
+        }
+
+        textarea {
+            &::placeholder {
+                padding-top: 0.25em;
+            }
+        }
+    }
+
+    .request__image {
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+// tablet-landscape
+@media (min-width: 900px) {
+    .request-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    .request-form {
+        width: 60%;
+        margin-left: 20%;
+        height: auto;
+
+        .button {
+            width: 60%;
+            margin-left: 20%;
+            height: 65px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 1em;
+            width: 100%;
+            margin-left: 0;
+        }
+
+        input {
+            height: 2em;
+        }
+    }
+
+    .request__image {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+    .request-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    .request-form {
+        width: 50%;
+        margin-left: 0;
+
+        height: 100%;
+
+        .button {
+            width: 103%;
+            height: 65px;
+            margin-left: 2.5%;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 1em;
+            width: 100%;
+        }
+
+        input {
+            height: 2em;
+        }
+    }
+
+    .request__image {
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+    .request-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    .request-form {
+        width: 40%;
+        height: 100%;
+
+        input,
+        textarea {
+            margin-bottom: 1em;
+            width: 100%;
+        }
+
+        input {
+            height: 2em;
+        }
+    }
+
+    .request__image {
+        width: 50%;
+        height: 40vh;
+    }
+}
