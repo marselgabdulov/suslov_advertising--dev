@@ -11,6 +11,7 @@
     .logo {
         height: 20%;
         margin-top: 50px;
+        font-size: 1.25em;
     }
 }
 
@@ -19,6 +20,7 @@
     .logo {
         height: 20%;
         margin-top: 50px;
+        font-size: 1.25em;
     }
 
 }
@@ -34,7 +36,7 @@
 // tablet-landscape
 @media (min-width: 900px) {
     .logo {
-        width: 20%;
+        width: auto;
         height: auto;
         margin-top: -0.25em;
         font-size: 1.4em;

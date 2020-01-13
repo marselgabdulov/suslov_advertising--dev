@@ -282,7 +282,37 @@ function IndexPage() {
         <Request />
       </section>
       <section className="contacts" id="contacts">
-        Контакты
+        <div className="contacts__navigation">
+          <div
+            className="contacts__logo"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            <span style={{ color: "#231d9b" }}>релама</span>
+            <span style={{ color: "#e0761f" }}>ДА</span>
+          </div>
+          <div className="contacts__links">
+            <span onClick={() => scrollTo(document.getElementById("audio"))}>
+              аудио
+            </span>
+            <span onClick={() => scrollTo(document.getElementById("video"))}>
+              видео
+            </span>
+            <span onClick={() => scrollTo(document.getElementById("stages"))}>
+              этапы
+            </span>
+            <span onClick={() => scrollTo(document.getElementById("prices"))}>
+              цены
+            </span>
+          </div>
+        </div>
+        <div className="contacts__phone-email">
+          <span className="contacts__phone">
+            <a href="tel:+7-926-393-0652">8 926 393-06-52</a>
+          </span>
+          <span className="contacts__email">
+            <a href="mailto:avsuslov@ya.ru">avsuslov@ya.ru</a>
+          </span>
+        </div>
       </section>
     </Layout>
   )
