@@ -5,6 +5,15 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+audio:active,
+audio:focus,
+video:active,
+video:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
 ul {
   list-style: none;
   margin-left: 0;
@@ -64,8 +73,7 @@ li:before {
   }
 }
 
-@media screen and (max-width: 1023px) and (orientation: landscape) {
-}
+@media screen and (max-width: 1023px) and (orientation: landscape) {}
 
 // mobile
 @media (max-width: 599px) {
@@ -161,6 +169,7 @@ li:before {
 
 // desktop/laptop
 @media (min-width: 1200px) {
+
   h1,
   h2 {
     text-align: left;

@@ -7,8 +7,22 @@ import AudioImage from "../images/audio.svg"
 import VideoImage from "../images/video.svg"
 import StagesImage from "../images/stages.svg"
 import PricesImage from "../images/wallet.svg"
+import Audio from "../components/Audio/Audio"
+import Video from "../components/Video/Video"
+import AudioOne from "../audio/rostok1.mp3"
+import AudioTwo from "../audio/rostok2.mp3"
+import VideoOne from "../video/angel8.mp4"
+import VideoOneWebM from "../video/angel8.webm"
+import Request from "../components/Request/Request"
 
 function IndexPage() {
+  function scrollTo(element) {
+    window.scroll({
+      behavior: "smooth",
+      left: 0,
+      top: element.offsetTop - 100,
+    })
+  }
   return (
     <Layout>
       <SEO title="Home" />
@@ -21,7 +35,12 @@ function IndexPage() {
           </p>
           <div className="intro__buttons">
             <button className="button orange">Тест</button>
-            <button className="button blue">Оставить заявку</button>
+            <button
+              className="button blue"
+              onClick={() => scrollTo(document.getElementById("request"))}
+            >
+              Оставить заявку
+            </button>
           </div>
         </div>
         <div
@@ -167,7 +186,12 @@ function IndexPage() {
           Оба вида рекламы для большего эффекта можно озвучить голосами
           профессиональных дикторов
         </p>
-        <button className="button blue">Оставить заявку</button>
+        <button
+          className="button blue"
+          onClick={() => scrollTo(document.getElementById("request"))}
+        >
+          Оставить заявку
+        </button>
       </div>
 
       <section className="stages" id="stages">
@@ -246,10 +270,18 @@ function IndexPage() {
           </li>
         </ul>
       </section>
-      <section className="section" id="examples">
-        Примеры
+      <section className="examples" id="examples">
+        <h2 style={{ textAlign: "center" }}>Примеры работ</h2>
+        <Audio srcMP3={AudioOne} id="audio-one" />
+        <br />
+        <Audio srcMP3={AudioTwo} id="audio-two" />
+        <Video srcMP4={VideoOne} srcWEBM={VideoOneWebM} id="video-one" />
       </section>
-      <section className="section" id="contacts">
+      <section className="request" id="request">
+        <h2>Свяжитесь с нами</h2>
+        <Request />
+      </section>
+      <section className="contacts" id="contacts">
         Контакты
       </section>
     </Layout>
