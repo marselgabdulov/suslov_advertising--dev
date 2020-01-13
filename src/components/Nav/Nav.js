@@ -16,7 +16,8 @@ function Nav() {
           className="nav__logo"
           onClick={() => scrollTo(document.getElementById("intro"))}
         >
-          Logo
+          <span style={{ color: "#231d9b" }}>релама</span>
+          <span style={{ color: "#e0761f" }}>ДА</span>
         </span>
         <div className="nav__links">
           <span
@@ -33,15 +34,21 @@ function Nav() {
           </span>
           <span
             className="nav__link"
-            onClick={() => scrollTo(document.getElementById("responses"))}
-          >
-            Отзывы
-          </span>
-          <span
-            className="nav__link"
             onClick={() => scrollTo(document.getElementById("stages"))}
           >
             Этапы работ
+          </span>
+          <span
+            className="nav__link"
+            onClick={() => scrollTo(document.getElementById("prices"))}
+          >
+            Цены
+          </span>
+          <span
+            className="nav__link"
+            onClick={() => scrollTo(document.getElementById("examples"))}
+          >
+            Примеры
           </span>
           <span
             className="nav__link"

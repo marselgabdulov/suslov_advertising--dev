@@ -18,12 +18,12 @@
             display: flex;
 
             .nav__link {
-                font-weight: bold;
+                font-weight: 900;
                 transition: color .25s ease-in-out;
 
                 &:hover {
                     cursor: pointer;
-                    color: blue;
+                    color: #231d9b;
                 }
             }
         }
