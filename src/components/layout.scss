@@ -18,7 +18,7 @@ li {
 }
 
 li:before {
-  content: "\23FA";
+  content: "\2714 ";
   color: orange;
   padding-right: 5px;
 }
@@ -57,23 +57,40 @@ li:before {
   letter-spacing: 1px;
   border-width: 0px;
   border-radius: 5px;
-  background-color: #6c63ff;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
     border-color 0.2s ease-in-out;
-  box-shadow: 0px 10px 30px 0px rgba(108, 99, 255, 0.3);
 
   &:hover {
     cursor: pointer;
   }
 }
 
+.button.blue {
+  background-color: #6c63ff;
+  box-shadow: 0px 10px 30px 0px rgba(228, 228, 230, 0.3);
+
+  &:hover {
+    background-color: #0f097c;
+  }
+}
+
+.button.orange {
+  background-color: #e9710e;
+  box-shadow: 0px 10px 30px 0px rgba(228, 228, 230, 0.3);
+
+  &:hover {
+    background-color: #d14e02;
+  }
+}
+
 .intro__image,
 .audio__image,
 .video__image,
-.stages__image {
+.stages__image,
+.prices__image {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -91,8 +108,6 @@ li:before {
     font-weight: 600;
     width: 60%;
     padding-top: 1em;
-    // font-size: 2em;
-    // line-height: 1.5em;
     text-align: center;
   }
 
@@ -103,7 +118,7 @@ li:before {
   }
 }
 
-.stages {
+.stages, .prices {
   display: flex;
   flex-direction: column;
 }
@@ -122,6 +137,12 @@ li:before {
     text-align: center;
   }
 
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+
   p,
   li {
     font-size: 18px;
@@ -130,15 +151,15 @@ li:before {
   }
 
   section {
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
   }
 
   .intro {
     display: flex;
     flex-direction: column-reverse;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 1em;
     height: auto;
   }
@@ -183,7 +204,8 @@ li:before {
     height: 40vh;
   }
 
-  .stages__image {
+  .stages__image,
+  .prices__image {
     width: 100%;
     height: 50vh;
   }
@@ -194,6 +216,12 @@ li:before {
   h1 {
     font-size: 50px;
     line-height: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
   }
 
   p,
@@ -263,11 +291,13 @@ li:before {
     height: 40vh;
   }
 
-  .stages {
+  .stages,
+  .prices {
     margin-top: 5em;
   }
 
-  .stages__image {
+  .stages__image,
+  .prices__image {
     width: 100%;
     height: 50vh;
   }
@@ -278,6 +308,13 @@ li:before {
   h1 {
     font-size: 50px;
     line-height: 60px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
   }
 
   p {
@@ -287,62 +324,65 @@ li:before {
 
   .intro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     width: 90%;
     margin-left: 5%;
     margin-top: 2em;
     height: auto;
-    text-align: left;
+    text-align: center;
   }
 
   .button {
     margin-right: 1.4em;
-    width: 45%;
+    width: 200px;
     height: 50px;
     font-size: 15px;
   }
 
   .intro__text {
-    width: 40%;
+    width: 100%;
   }
 
   .intro__buttons {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .intro__image {
-    height: 75vh;
-    width: 50%;
+    height: 50vh;
+    width: 100%;
   }
 
-  .audio {
+  .audio,
+  .video {
     margin-top: 5em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
     margin-left: 5%;
   }
 
-  .audio__text {
-    width: 40%;
+  .audio__text,
+  .video__text {
+    width: 100%;
     height: auto;
-    margin-left: 10%;
     align-self: center;
   }
 
   .audio__image,
   .video__image {
-    width: 50%;
+    width: 100%;
     height: 40vh;
   }
 
   .audio__advantages,
   .video__advantages,
-  .stages {
+  .stages,
+  .prices {
     width: 90%;
     margin-left: 5%;
-    margin-top: 7.5em;
   }
 }
 
@@ -355,6 +395,11 @@ li:before {
     margin-left: 10%;
     margin-top: 10em;
     height: auto;
+    text-align: left;
+  }
+
+  h1,
+  h2 {
     text-align: left;
   }
 
@@ -379,7 +424,8 @@ li:before {
     width: 45%;
   }
 
-  .audio {
+  .audio,
+  .video {
     margin-top: 10em;
     display: flex;
     flex-direction: row;
@@ -387,7 +433,8 @@ li:before {
     margin-left: 10%;
   }
 
-  .audio__text {
+  .audio__text,
+  .video__text {
     width: 40%;
     height: auto;
     margin-left: 10%;
@@ -402,7 +449,8 @@ li:before {
 
   .audio__advantages,
   .video__advantages,
-  .stages {
+  .stages,
+  .prices {
     width: 80%;
     margin-left: 10%;
     margin-top: 7.5em;
@@ -468,15 +516,27 @@ li:before {
 
   .audio__advantages,
   .video__advantages,
-  .stages {
+  .stages,
+  .prices {
     width: 60%;
     margin-left: 20%;
     margin-top: 7.5em;
   }
 
-  .stages__image {
+  .stages__image,
+  .prices__image {
     width: 60%;
     margin-left: 20%;
     height: 45vh;
+  }
+
+  .attention {
+    p {
+      width: 60%;
+    }
+
+    .button {
+      width: 250px;
+    }
   }
 }
