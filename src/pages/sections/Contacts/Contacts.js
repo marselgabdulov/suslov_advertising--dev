@@ -1,8 +1,5 @@
 import React from "react"
 import "./Contacts.scss"
-import fb from "./fb.svg"
-import tg from "./tg.svg"
-import vk from "./vk.svg"
 
 function Contacts() {
   return (
@@ -63,19 +60,8 @@ function Contacts() {
             <a href="tel:+7-926-393-0652">8 926 393-06-52</a>
           </span>
           <span className="contacts__email">
-            <a href="mailto:avsuslov@ya.ru">avsuslov@ya.ru</a>
+            <a href="mailto:avsuslov2017@ya.ru">avsuslov2017@ya.ru</a>
           </span>
-          <div className="contacts__social">
-            <a href="#">
-              <img src={fb} width="45" height="45" alt="Fb" />
-            </a>
-            <a href="#">
-              <img src={vk} width="45" height="45" alt="VK" />
-            </a>
-            <a href="#">
-              <img src={tg} width="45" height="45" alt="Telegram" />
-            </a>
-          </div>
         </div>
       </div>
     </section>

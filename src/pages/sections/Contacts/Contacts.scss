@@ -149,10 +149,10 @@
         margin-top: 1em;
         height: auto;
         width: 100%;
-        align-items: flex-end;
+        align-items: center;
 
         h2 {
-            text-align: right;
+            text-align: center;
         }
 
         .contacts__phone a,
@@ -166,11 +166,6 @@
 
         .contacts__email a {
             font-size: 1.5em;
-        }
-
-        .contacts__social {
-            margin-top: 2em;
-            width: 36%;
         }
     }
 }
@@ -208,8 +203,10 @@
 
     .contacts__info {
         margin-top: 5em;
-        height: 65%;
+        height: 68%;
         width: 45%;
+        align-items: flex-start;
+        justify-content: space-between;
 
         h2 {
             text-align: left;
@@ -228,10 +225,6 @@
             font-size: 1.5em;
         }
 
-        .contacts__social {
-            margin-top: 2em;
-            width: 36%;
-        }
     }
 }
 
@@ -272,6 +265,8 @@
         height: 65%;
         width: 45%;
         align-items: flex-start;
+        justify-content: space-between;
+
 
         .contacts__phone a,
         .contacts__email a {
@@ -284,11 +279,6 @@
 
         .contacts__email a {
             font-size: 1.5em;
-        }
-
-        .contacts__social {
-            margin-top: 2em;
-            width: 36%;
         }
     }
 }
@@ -321,8 +311,10 @@
 
     .contacts__info {
         margin-top: 5em;
-        height: 65%;
+        height: 55%;
         width: 45%;
+
+        .contacts__phone {}
 
         .contacts__phone a,
         .contacts__email a {
@@ -337,9 +329,6 @@
             font-size: 1.5em;
         }
 
-        .contacts__social {
-            margin-top: 2em;
-            width: 36%;
-        }
+
     }
 }

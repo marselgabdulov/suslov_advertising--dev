@@ -49,6 +49,7 @@ ol {
 
 ol li {
   counter-increment: my-awesome-counter;
+  margin-bottom: 1em;
 }
 
 ol li::before {
