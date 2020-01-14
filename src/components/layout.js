@@ -1,5 +1,6 @@
 import React from "react"
 import Nav from "./Nav/Nav"
+import Footer from "./Footer/Footer"
 import "./layout.scss"
 
 function Layout({ children }) {
@@ -9,16 +10,9 @@ function Layout({ children }) {
       <div>
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }
 
 export default Layout
-
-{
-  /* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */
-}

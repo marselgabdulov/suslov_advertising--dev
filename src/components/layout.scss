@@ -43,17 +43,21 @@ li:before {
 }
 
 .button {
+  height: 7.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  background-color: black;
+  border-color: black;
+  border-radius: 4rem;
+  box-shadow: 0 40px 50px 0 rgba(0, 0, 0, .1);
+  color: white;
+  font-size: 2rem;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.55;
   font-weight: 600;
   letter-spacing: 1px;
-  border-width: 0px;
-  border-radius: 5px;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
@@ -115,6 +119,7 @@ li:before {
     margin-top: 1em;
     width: 100%;
     height: 50px;
+    font-size: 14px;
   }
 }
 
