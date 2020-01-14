@@ -70,20 +70,20 @@ li:before {
 }
 
 .button.blue {
-  background-color: #6c63ff;
+  background-color: rgb(46, 162, 175);
   box-shadow: 0px 10px 30px 0px rgba(228, 228, 230, 0.3);
 
   &:hover {
-    background-color: #0f097c;
+    background-color: rgb(39, 132, 143);
   }
 }
 
 .button.orange {
-  background-color: #e9710e;
+  background-color: rgb(247, 189, 75);
   box-shadow: 0px 10px 30px 0px rgba(228, 228, 230, 0.3);
 
   &:hover {
-    background-color: #d14e02;
+    background-color: rgb(241, 168, 20);
   }
 }
 

@@ -1,6 +1,6 @@
 import React from "react"
 import "./Stages.scss"
-import StagesImage from "./stages.svg"
+import StagesImage from "./notes.svg"
 
 function Stages() {
   return (

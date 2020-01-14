@@ -1,6 +1,6 @@
 import React from "react"
 import "./Prices.scss"
-import PricesImage from "./wallet.svg"
+import PricesImage from "./nature-man.svg"
 
 function Prices() {
   return (

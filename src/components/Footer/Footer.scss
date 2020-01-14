@@ -1,85 +1,83 @@
 .footer {
-    width: 100%;
-    background-color: #B4DBFE;
+  width: 100%;
+  background-color: #6BD5E1;
 }
 
 .footer__wrapper {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
+  * {
+    margin-top: 1em;
+  }
 
-    * {
-        margin-top: 1em;
-    }
-
-    a {
-        color: black;
-    }
+  a {
+    color: black;
+  }
 }
 
 .footer__copy {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-
 @media screen and (max-width: 1023px) and (orientation: landscape) {
-    .footer {
-        height: 50px;
-    }
+  .footer {
+    height: 50px;
+  }
 
-    .footer__wrapper {
-        width: 85%;
-        margin-left: 7.5%;
-    }
+  .footer__wrapper {
+    width: 85%;
+    margin-left: 7.5%;
+  }
 }
 
 // mobile
 @media (max-width: 599px) {
-    .footer {
-        height: 50px;
-    }
+  .footer {
+    height: 50px;
+  }
 
-    .footer__wrapper {
-        width: 90%;
-        margin-left: 5%;
-        font-size: 0.9em;
-    }
+  .footer__wrapper {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 0.9em;
+  }
 }
 
 // tublet-portrait
 @media (min-width: 600px) {
-    .footer {
-        height: 100px;
-    }
+  .footer {
+    height: 100px;
+  }
 
-    .footer__wrapper {
-        width: 90%;
-        margin-left: 5%;
-        font-size: 1.15em;
-    }
+  .footer__wrapper {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.15em;
+  }
 }
 
 // tablet-landscape
 @media (min-width: 900px) {
-    .footer__wrapper {
-        width: 90%;
-        margin-left: 5%;
-    }
+  .footer__wrapper {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 
 // desktop/laptop
 @media (min-width: 1200px) {
-    .footer__wrapper {
-        width: 80%;
-        margin-left: 10%;
-    }
+  .footer__wrapper {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
 // desktop x-large
 @media (min-width: 1800px) {
-    .footer__wrapper {
-        border-top: 1px solid #000;
-        width: 60%;
-        margin-left: 20%;
-    }
+  .footer__wrapper {
+    border-top: 1px solid #000;
+    width: 60%;
+    margin-left: 20%;
+  }
 }

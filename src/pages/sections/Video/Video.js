@@ -1,6 +1,6 @@
 import React from "react"
 import "./Video.scss"
-import VideoImage from "./video.svg"
+import VideoImage from "./gamer.svg"
 
 function Video() {
   return (

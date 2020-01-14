@@ -1,6 +1,6 @@
 import React from "react"
 import "./Audio.scss"
-import AudioImage from "./audio.svg"
+import AudioImage from "./headphones.svg"
 
 function Audio() {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 import "./Intro.scss"
-import IntroImage from "./professor.svg"
+import IntroImage from "./social-feed.svg"
 
 function Intro() {
   return (
