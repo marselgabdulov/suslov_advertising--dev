@@ -30,13 +30,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          `Montserrat`,
-          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+          {
+            family: `Montserrat`,
+            subsets: [`cyrillic`],
+            variants: [`400`, `700`, `900`],
+          },
         ],
-        display: "swap",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
