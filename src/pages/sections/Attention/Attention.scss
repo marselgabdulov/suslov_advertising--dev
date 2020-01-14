@@ -21,11 +21,19 @@
   }
 }
 
-@media screen and (max-width: 1023px) and (orientation: landscape) {
-}
+@media screen and (max-width: 1023px) and (orientation: landscape) {}
 
 // mobile
 @media (max-width: 599px) {
+  .attention {
+    p {
+      width: 80%;
+    }
+
+    .button {
+      width: 40%;
+    }
+  }
 }
 
 // tublet-portrait
@@ -42,13 +50,10 @@
 }
 
 // tablet-landscape
-@media (min-width: 900px) {
-}
+@media (min-width: 900px) {}
 
 // desktop/laptop
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
 
 // desktop x-large
-@media (min-width: 1800px) {
-}
+@media (min-width: 1800px) {}

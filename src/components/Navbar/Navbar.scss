@@ -1,5 +1,4 @@
-.navbar,
-.navbar--hidden {
+.navbar {
   width: 100%;
   transition: top 0.5s;
   z-index: 100;
@@ -31,8 +30,7 @@
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
 
-  .navbar,
-  .navbar--hidden {
+  .navbar {
     position: relative;
     height: 100vh;
 
@@ -60,8 +58,7 @@
 // mobile
 @media (max-width: 599px) {
 
-  .navbar,
-  .navbar--hidden {
+  .navbar {
     position: relative;
 
     .navbar__wrapper {
@@ -83,8 +80,7 @@
 // tublet-portrait
 @media (min-width: 600px) {
 
-  .navbar,
-  .navbar--hidden {
+  .navbar {
     position: relative;
 
     .navbar__wrapper {
@@ -106,8 +102,7 @@
 // tablet-landscape
 @media (min-width: 900px) {
 
-  .navbar,
-  .navbar--hidden {
+  .navbar {
     .navbar__wrapper {
       width: 90%;
       margin: auto 5%;
@@ -128,13 +123,7 @@
 
 // desktop/laptop
 @media (min-width: 1200px) {
-
-  .navbar--hidden {
-    top: -100px;
-  }
-
-  .navbar,
-  .navbar--hidden {
+  .navbar {
     .navbar__wrapper {
       width: 80%;
       margin: auto 10%;
@@ -149,9 +138,7 @@
 
 // desktop x-large
 @media (min-width: 1800px) {
-
-  .navbar,
-  .navbar--hidden {
+  .navbar {
     position: fixed;
 
     .navbar__wrapper {

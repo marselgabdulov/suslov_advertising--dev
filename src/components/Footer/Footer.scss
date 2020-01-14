@@ -1,13 +1,12 @@
 .footer {
     width: 100%;
-    height: 50px;
     background-color: #B4DBFE;
 }
 
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
-    height: auto;
+
 
     * {
         margin-top: 1em;
@@ -22,16 +21,24 @@
     text-transform: uppercase;
 }
 
+
 @media screen and (max-width: 1023px) and (orientation: landscape) {
+    .footer {
+        height: 50px;
+    }
+
     .footer__wrapper {
         width: 85%;
-
         margin-left: 7.5%;
     }
 }
 
 // mobile
 @media (max-width: 599px) {
+    .footer {
+        height: 50px;
+    }
+
     .footer__wrapper {
         width: 90%;
         margin-left: 5%;
@@ -41,6 +48,10 @@
 
 // tublet-portrait
 @media (min-width: 600px) {
+    .footer {
+        height: 100px;
+    }
+
     .footer__wrapper {
         width: 90%;
         margin-left: 5%;

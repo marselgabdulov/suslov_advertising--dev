@@ -1,12 +1,12 @@
 import React from "react"
-import Nav from "./Nav/Nav"
+import Navbar from "./Navbar/Navbar"
 import Footer from "./Footer/Footer"
 import "./layout.scss"
 
 function Layout({ children }) {
   return (
     <>
-      <Nav />
+      <Navbar />
       <div>
         <main>{children}</main>
       </div>

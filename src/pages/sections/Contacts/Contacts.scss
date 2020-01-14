@@ -235,6 +235,7 @@
     .contacts__wrapper {
         width: 80%;
         margin-left: 10%;
+        flex-direction: row;
     }
 
     .contacts__form {
@@ -256,6 +257,7 @@
         margin-top: 5em;
         height: 65%;
         width: 45%;
+        align-items: flex-start;
 
         .contacts__phone a,
         .contacts__email a {
