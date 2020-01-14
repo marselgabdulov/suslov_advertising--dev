@@ -1,20 +1,20 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .contacts__navigation {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+  }
 
-    .contacts__navigation {
-        display: flex;
-        justify-content: space-between;
+  .contacts__logo {
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
     }
-
-    .contacts__logo {
-        font-weight: bold;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
+  }
 }
 
 .intro__image,
@@ -22,489 +22,488 @@
 .video__image,
 .stages__image,
 .prices__image {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .examples {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .attention {
-    width: 100%;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-    p {
-        text-transform: uppercase;
-        font-weight: 600;
-        width: 60%;
-        padding-top: 1em;
-        text-align: center;
-    }
+  p {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 60%;
+    padding-top: 1em;
+    text-align: center;
+  }
 
-    .button {
-        width: 200px;
-        align-self: center;
-        margin-bottom: 2em;
-    }
+  .button {
+    width: 200px;
+    align-self: center;
+    margin-bottom: 2em;
+  }
 }
 
 .stages,
 .prices {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
-    section {
-        margin-top: 2em;
-    }
+  section {
+    margin-top: 2em;
+  }
 
-    .request {
-        padding-top: 5em;
-        height: auto;
+  .request {
+    padding-top: 5em;
+    height: auto;
 
-        h2 {
-            text-align: center;
-        }
+    h2 {
+      text-align: center;
     }
+  }
 
-    .intro__image,
-    .audio__image,
-    .video__image,
-    .stages__image,
-    .prices__image {
-        display: none;
-    }
+  .intro__image,
+  .audio__image,
+  .video__image,
+  .stages__image,
+  .prices__image {
+    display: none;
+  }
 }
 
 // mobile
 @media (max-width: 599px) {
-    section {
-        width: 90%;
-        margin-left: 5%;
-    }
+  section {
+    width: 90%;
+    margin-left: 5%;
+  }
 
-    .intro {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 1em;
-        height: auto;
-    }
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1em;
+    height: auto;
+  }
 
-    .button {
-        margin-top: 1em;
-        width: 100%;
-        height: 50px;
-    }
+  .button {
+    margin-top: 1em;
+    width: 100%;
+    height: 50px;
+  }
 
-    .intro__text {
-        width: 100%;
-    }
+  .intro__text {
+    width: 100%;
+  }
 
-    .intro__image {
-        height: 40vh;
-    }
+  .intro__image {
+    height: 40vh;
+  }
 
-    .audio {
-        margin-top: 2em;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin-left: 10%;
-    }
+  .audio {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
 
-    .audio__text,
-    .video__text {
-        width: 100%;
-        height: auto;
-    }
+  .audio__text,
+  .video__text {
+    width: 100%;
+    height: auto;
+  }
 
-    .attention {
-        p {
-            width: 80%;
-        }
+  .attention {
+    p {
+      width: 80%;
     }
+  }
 
-    .audio__image,
-    .video__image {
-        width: 100%;
-        height: 40vh;
-    }
+  .audio__image,
+  .video__image {
+    width: 100%;
+    height: 40vh;
+  }
 
-    .stages__image,
-    .prices__image {
-        width: 100%;
-        height: 50vh;
-    }
+  .stages__image,
+  .prices__image {
+    width: 100%;
+    height: 50vh;
+  }
 }
 
 // tublet-portrait
 @media (min-width: 600px) {
-    section {
-        width: 80%;
-        margin-left: 10%;
-    }
+  section {
+    width: 80%;
+    margin-left: 10%;
+  }
 
-    .intro {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 2em;
-        height: auto;
-        text-align: left;
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2em;
+    height: auto;
+    text-align: left;
+  }
+
+  .button {
+    margin-top: 1.4em;
+    width: 100%;
+    height: 75px;
+    font-size: 21px;
+  }
+
+  .intro__text {
+    width: 100%;
+  }
+
+  .intro__image {
+    margin-top: 1.4em;
+    height: 40vh;
+  }
+
+  .audio {
+    margin-top: 7.5em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .audio__text,
+  .video__text {
+    width: 100%;
+    height: auto;
+  }
+
+  .attention {
+    p {
+      width: 80%;
     }
 
     .button {
-        margin-top: 1.4em;
-        width: 100%;
-        height: 75px;
-        font-size: 21px;
+      width: 40%;
     }
+  }
 
-    .intro__text {
-        width: 100%;
-    }
+  .audio__image,
+  .video__image {
+    width: 100%;
+    height: 40vh;
+  }
 
-    .intro__image {
-        margin-top: 1.4em;
-        height: 40vh;
-    }
+  .stages,
+  .prices,
+  .request {
+    margin-top: 5em;
+  }
 
-    .audio {
-        margin-top: 7.5em;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    .audio__text,
-    .video__text {
-        width: 100%;
-        height: auto;
-    }
-
-    .attention {
-        p {
-            width: 80%;
-        }
-
-        .button {
-            width: 40%;
-        }
-    }
-
-    .audio__image,
-    .video__image {
-        width: 100%;
-        height: 40vh;
-    }
-
-    .stages,
-    .prices,
-    .request {
-        margin-top: 5em;
-    }
-
-    .stages__image,
-    .prices__image {
-        width: 100%;
-        height: 50vh;
-    }
+  .stages__image,
+  .prices__image {
+    width: 100%;
+    height: 50vh;
+  }
 }
 
 // tablet-landscape
 @media (min-width: 900px) {
-    .intro {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 2em;
-        height: auto;
-        text-align: center;
-    }
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2em;
+    height: auto;
+    text-align: center;
+  }
 
-    .button {
-        margin-right: 1.4em;
-        width: 200px;
-        height: 50px;
-        font-size: 15px;
-    }
+  .button {
+    margin-right: 1.4em;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+  }
 
-    .intro__text {
-        width: 100%;
-    }
+  .intro__text {
+    width: 100%;
+  }
 
-    .intro__buttons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+  .intro__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .intro__image {
-        height: 50vh;
-        width: 100%;
-    }
+  .intro__image {
+    height: 50vh;
+    width: 100%;
+  }
 
-    .audio,
-    .video {
-        margin-top: 5em;
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin-left: 5%;
-    }
+  .audio,
+  .video {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
 
-    .audio__text,
-    .video__text {
-        width: 100%;
-        height: auto;
-        align-self: center;
-    }
+  .audio__text,
+  .video__text {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
 
-    .audio__image,
-    .video__image {
-        width: 100%;
-        height: 40vh;
-    }
+  .audio__image,
+  .video__image {
+    width: 100%;
+    height: 40vh;
+  }
 
-    .audio__advantages,
-    .video__advantages,
-    .stages,
-    .prices,
-    .request {
-        width: 90%;
-        margin-left: 5%;
-    }
+  .audio__advantages,
+  .video__advantages,
+  .stages,
+  .prices,
+  .request {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 
 // desktop/laptop
 @media (min-width: 1200px) {
-    .intro {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        margin-left: 10%;
-        margin-top: 10em;
-        height: auto;
-        text-align: left;
-    }
+  .intro {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 10em;
+    height: auto;
+    text-align: left;
+  }
 
-    .button {
-        margin-right: 1.4em;
-        width: 45%;
-        height: 65px;
-        font-size: 18px;
-    }
+  .button {
+    margin-right: 1.4em;
+    width: 45%;
+    height: 65px;
+    font-size: 18px;
+  }
 
-    .intro__text {
-        width: 50%;
-    }
+  .intro__text {
+    width: 50%;
+  }
 
-    .intro__buttons {
-        display: flex;
-        flex-direction: row;
-    }
+  .intro__buttons {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .intro__image {
-        height: 50vh;
-        width: 45%;
-    }
+  .intro__image {
+    height: 50vh;
+    width: 45%;
+  }
 
-    .audio,
-    .video {
-        margin-top: 10em;
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-        margin-left: 10%;
-    }
+  .audio,
+  .video {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+  }
 
-    .audio__text,
-    .video__text {
-        width: 40%;
-        height: auto;
-        margin-left: 10%;
-        align-self: center;
-    }
+  .audio__text,
+  .video__text {
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    align-self: center;
+  }
 
-    .audio__image,
-    .video__image {
-        width: 50%;
-        height: 40vh;
-    }
+  .audio__image,
+  .video__image {
+    width: 50%;
+    height: 40vh;
+  }
 
-    .audio__advantages,
-    .video__advantages,
-    .stages,
-    .prices,
-    .request {
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 7.5em;
-    }
+  .audio__advantages,
+  .video__advantages,
+  .stages,
+  .prices,
+  .request {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 7.5em;
+  }
 }
 
 // desktop x-large
 @media (min-width: 1800px) {
-    .intro {
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-        margin-left: 20%;
-        margin-top: 10em;
-        height: auto;
-        text-align: left;
+  .intro {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 10em;
+    height: auto;
+    text-align: left;
+  }
+
+  .button {
+    margin-top: 1em;
+    margin-right: 1.4em;
+    width: 45%;
+    height: 65px;
+    font-size: 18px;
+  }
+
+  .intro__text {
+    width: 40%;
+  }
+
+  .intro__buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .intro__image {
+    height: 50vh;
+    width: 45%;
+  }
+
+  .audio,
+  .video {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .audio__text,
+  .video__text {
+    width: 42%;
+    height: auto;
+    align-self: center;
+  }
+
+  .audio__image,
+  .video__image {
+    width: 48%;
+    height: 40vh;
+  }
+
+  .audio__advantages,
+  .video__advantages,
+  .stages,
+  .prices,
+  .request {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 7.5em;
+  }
+
+  .stages__image,
+  .prices__image {
+    width: 60%;
+    margin-left: 20%;
+    height: 45vh;
+  }
+
+  .attention {
+    p {
+      width: 60%;
     }
 
     .button {
-        margin-top: 1em;
-        margin-right: 1.4em;
-        width: 45%;
-        height: 65px;
-        font-size: 18px;
+      width: 250px;
     }
+  }
 
-    .intro__text {
+  .examples {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts {
+    width: 60%;
+    margin-left: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .contacts__navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+
+      .contacts__logo {
+        width: auto;
+      }
+
+      .contacts__links {
+        display: flex;
         width: 40%;
-    }
-
-    .intro__buttons {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .intro__image {
-        height: 50vh;
-        width: 45%;
-    }
-
-    .audio,
-    .video {
-        margin-top: 10em;
-        display: flex;
-        flex-direction: row;
-        width: 60%;
-        margin-left: 20%;
-    }
-
-    .audio__text,
-    .video__text {
-        width: 40%;
-        height: auto;
-        align-self: center;
-    }
-
-    .audio__image,
-    .video__image {
-        width: 50%;
-        height: 40vh;
-    }
-
-    .audio__advantages,
-    .video__advantages,
-    .stages,
-    .prices,
-    .request {
-        width: 60%;
-        margin-left: 20%;
-        margin-top: 7.5em;
-    }
-
-    .stages__image,
-    .prices__image {
-        width: 60%;
-        margin-left: 20%;
-        height: 45vh;
-    }
-
-    .attention {
-        p {
-            width: 60%;
-        }
-
-        .button {
-            width: 250px;
-        }
-    }
-
-    .examples {
-        width: 60%;
-        margin-left: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contacts {
-        width: 60%;
-        margin-left: 20%;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        font-size: 0.9em;
 
-        .contacts__navigation {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            height: 100px;
-
-            .contacts__logo {
-                width: auto;
-            }
-
-            .contacts__links {
-                display: flex;
-                width: 40%;
-                justify-content: space-between;
-                font-size: 0.9em;
-
-                &:hover {
-                    cursor: pointer;
-                }
-            }
+        &:hover {
+          cursor: pointer;
         }
-
-        .contacts__phone-email {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            height: auto;
-            justify-content: space-around;
-
-            .contacts__phone {
-                margin-bottom: 1em;
-            }
-
-            .contacts__phone a {
-                font-weight: 900;
-                color: black;
-                font-size: 2em;
-                text-decoration: none;
-
-            }
-
-            .contacts__email a {
-                text-decoration: none;
-                color: black;
-                font-size: 1.25em;
-            }
-        }
+      }
     }
+
+    .contacts__phone-email {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: auto;
+      justify-content: space-around;
+
+      .contacts__phone {
+        margin-bottom: 1em;
+      }
+
+      .contacts__phone a {
+        font-weight: 900;
+        color: black;
+        font-size: 2em;
+        text-decoration: none;
+      }
+
+      .contacts__email a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.25em;
+      }
+    }
+  }
 }
