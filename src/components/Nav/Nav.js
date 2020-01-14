@@ -1,60 +1,90 @@
-import React from "react"
+import React, { Component } from "react"
 import "./Nav.scss"
 import Logo from "../Logo/Logo"
 
-function Nav() {
-  function scrollTo(element) {
+class Navbar extends Component {
+  state = {
+    prevScrollpos: window.pageYOffset,
+    visible: true,
+  }
+
+  // Adds an event listener when the component is mount.
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  // Remove the event listener when the component is unmount.
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
+  }
+
+  // Hide or show the menu.
+  handleScroll = () => {
+    const { prevScrollpos } = this.state
+
+    const currentScrollPos = window.pageYOffset
+    const visible = prevScrollpos > currentScrollPos
+
+    this.setState({
+      prevScrollpos: currentScrollPos,
+      visible,
+    })
+  }
+
+  scrollTo = element => {
     window.scroll({
       behavior: "smooth",
       left: 0,
       top: element.offsetTop - 100,
     })
   }
-  return (
-    <div className="nav">
-      <div className="nav__wrapper">
-        <Logo />
-        <div className="nav__links">
-          <span
-            className="nav__link"
-            onClick={() => scrollTo(document.getElementById("audio"))}
-          >
-            Аудио реклама
-          </span>
-          <span
-            className="nav__link"
-            onClick={() => scrollTo(document.getElementById("video"))}
-          >
-            Видео реклама
-          </span>
-          <span
-            className="nav__link"
-            onClick={() => scrollTo(document.getElementById("stages"))}
-          >
-            Этапы работ
-          </span>
-          <span
-            className="nav__link"
-            onClick={() => scrollTo(document.getElementById("prices"))}
-          >
-            Цены
-          </span>
-          <span
-            className="nav__link"
-            onClick={() => scrollTo(document.getElementById("examples"))}
-          >
-            Примеры
-          </span>
-          <span
-            className="nav__link"
-            onClick={() => scrollTo(document.getElementById("contacts"))}
-          >
-            Контакты
-          </span>
+  render() {
+    return (
+      <nav className={this.state.visible ? "navbar" : "navbar--hidden"}>
+        <div className="navbar__wrapper">
+          <Logo />
+          <div className="navbar__links">
+            <span
+              className="navbar__link"
+              onClick={() => this.scrollTo(document.getElementById("audio"))}
+            >
+              Аудио реклама
+            </span>
+            <span
+              className="navbar__link"
+              onClick={() => this.scrollTo(document.getElementById("video"))}
+            >
+              Видео реклама
+            </span>
+            <span
+              className="navbar__link"
+              onClick={() => this.scrollTo(document.getElementById("stages"))}
+            >
+              Этапы работ
+            </span>
+            <span
+              className="navbar__link"
+              onClick={() => this.scrollTo(document.getElementById("prices"))}
+            >
+              Цены
+            </span>
+            <span
+              className="navbar__link"
+              onClick={() => this.scrollTo(document.getElementById("examples"))}
+            >
+              Примеры
+            </span>
+            <span
+              className="navbar__link"
+              onClick={() => this.scrollTo(document.getElementById("contacts"))}
+            >
+              Контакты
+            </span>
+          </div>
         </div>
-      </div>
-    </div>
-  )
+      </nav>
+    )
+  }
 }
 
-export default Nav
+export default Navbar
