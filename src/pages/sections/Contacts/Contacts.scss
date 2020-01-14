@@ -1,3 +1,22 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .contacts__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contacts__logo {
+        font-weight: bold;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
 .request-form * {
     display: flex;
     flex-direction: column;
@@ -36,6 +55,9 @@
         }
     }
 }
+
+
+
 
 // mobile
 @media (max-width: 599px) {
@@ -84,6 +106,7 @@
         width: 100%;
         height: 40vh;
     }
+
 }
 
 // tublet-portrait
@@ -132,6 +155,7 @@
         width: 100%;
         height: 40vh;
     }
+
 }
 
 // tablet-landscape
@@ -210,6 +234,7 @@
         width: 50%;
         height: 40vh;
     }
+
 }
 
 // desktop x-large
@@ -240,5 +265,62 @@
     .request__image {
         width: 50%;
         height: 40vh;
+    }
+
+    .contacts {
+        width: 60%;
+        margin-left: 20%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .contacts__navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+
+            .contacts__logo {
+                width: auto;
+            }
+
+            .contacts__links {
+                display: flex;
+                width: 40%;
+                justify-content: space-between;
+                font-size: 0.9em;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .contacts__phone-email {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: auto;
+            justify-content: space-around;
+
+            .contacts__phone {
+                margin-bottom: 1em;
+            }
+
+            .contacts__phone a {
+                font-weight: 900;
+                color: black;
+                font-size: 2em;
+                text-decoration: none;
+            }
+
+            .contacts__email a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.25em;
+            }
+        }
     }
 }

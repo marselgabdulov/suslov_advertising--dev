@@ -1,0 +1,119 @@
+.audio__image {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  .audio__image {
+    display: none;
+  }
+}
+
+// mobile
+@media (max-width: 599px) {
+  .audio {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .audio__text {
+    width: 100%;
+    height: auto;
+  }
+
+  .audio__image {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+// tublet-portrait
+@media (min-width: 600px) {
+  .audio {
+    margin-top: 7.5em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .audio__text {
+    width: 100%;
+    height: auto;
+  }
+
+  .audio__image {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+// tablet-landscape
+@media (min-width: 900px) {
+  .audio {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .audio__text {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  .audio__image {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+  .audio {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .audio__text {
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    align-self: center;
+  }
+
+  .audio__image {
+    width: 50%;
+    height: 40vh;
+  }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+  .audio {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .audio__text {
+    width: 42%;
+    height: auto;
+    align-self: center;
+  }
+
+  .audio__image {
+    width: 48%;
+    height: 40vh;
+  }
+}

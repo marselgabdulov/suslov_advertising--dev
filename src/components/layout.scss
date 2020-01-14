@@ -21,6 +21,7 @@ h2 {
 
 b {
   font-weight: 700;
+  font-size: 1.1em;
 }
 
 ul {
@@ -82,8 +83,7 @@ li:before {
   }
 }
 
-@media screen and (max-width: 1023px) and (orientation: landscape) {
-}
+@media screen and (max-width: 1023px) and (orientation: landscape) {}
 
 // mobile
 @media (max-width: 599px) {
@@ -179,6 +179,7 @@ li:before {
 
 // desktop/laptop
 @media (min-width: 1200px) {
+
   h1,
   h2 {
     text-align: left;

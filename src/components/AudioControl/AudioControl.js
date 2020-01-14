@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 
-function Audio(props) {
+function AudioControl(props) {
   useEffect(() => {
     let audio = document.getElementById(props.id)
     audio.volume = 0.5
@@ -12,4 +12,4 @@ function Audio(props) {
   )
 }
 
-export default Audio
+export default AudioControl

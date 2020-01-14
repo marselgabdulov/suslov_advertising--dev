@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
-import "./Video.scss"
+import "./VideoControl.scss"
 
-function Video(props) {
+function VideoControl(props) {
   useEffect(() => {
     let video = document.getElementById(props.id)
     video.volume = 0.5
@@ -20,4 +20,4 @@ function Video(props) {
   )
 }
 
-export default Video
+export default VideoControl
