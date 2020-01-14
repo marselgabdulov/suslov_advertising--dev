@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "advert_landing",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Landing page for Reklama-Da agency, created with GatsbyJS",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Marsel Gabdulov <marsel.gabdulov@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
