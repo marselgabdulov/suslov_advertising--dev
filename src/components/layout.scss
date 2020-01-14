@@ -28,19 +28,37 @@ ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
+
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+    padding-bottom: 1em;
+  }
+
+  li:before {
+    content: "\2714 ";
+    color: orange;
+    padding-right: 5px;
+  }
 }
 
-li {
-  padding-left: 1em;
-  text-indent: -1em;
-  padding-bottom: 1em;
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
 }
 
-li:before {
-  content: "\2714 ";
-  color: orange;
-  padding-right: 5px;
+ol li {
+  counter-increment: my-awesome-counter;
 }
+
+ol li::before {
+  content: counter(my-awesome-counter) " - ";
+  color: black;
+  font-weight: bold;
+}
+
+
+
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {}
 

@@ -12,7 +12,7 @@
 // mobile
 @media (max-width: 599px) {
   .video {
-    margin-top: 2em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -33,7 +33,7 @@
 // tublet-portrait
 @media (min-width: 600px) {
   .video {
-    margin-top: 7.5em;
+    margin-top: 3.5em;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -54,7 +54,7 @@
 // tablet-landscape
 @media (min-width: 900px) {
   .video {
-    margin-top: 5em;
+    margin-top: 3.5em;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -76,7 +76,7 @@
 // desktop/laptop
 @media (min-width: 1200px) {
   .video {
-    margin-top: 10em;
+    margin-top: 7.5em;
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -99,7 +99,7 @@
 // desktop x-large
 @media (min-width: 1800px) {
   .video {
-    margin-top: 10em;
+    margin-top: 7.5em;
     display: flex;
     flex-direction: row;
     width: 60%;

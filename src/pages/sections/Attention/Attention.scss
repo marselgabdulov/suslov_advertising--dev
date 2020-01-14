@@ -1,6 +1,6 @@
 .attention {
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #F8F8F8;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -26,6 +26,8 @@
 // mobile
 @media (max-width: 599px) {
   .attention {
+    margin-top: 1.5em;
+
     p {
       width: 80%;
     }
@@ -39,6 +41,8 @@
 // tublet-portrait
 @media (min-width: 600px) {
   .attention {
+    margin-top: 3.5em;
+
     p {
       width: 80%;
     }
@@ -52,6 +56,8 @@
 // tablet-landscape
 @media (min-width: 900px) {
   .attention {
+    margin-top: 3.5em;
+
     p {
       width: 80%;
     }
@@ -78,6 +84,8 @@
 // desktop x-large
 @media (min-width: 1800px) {
   .attention {
+    height: 45vh;
+
     p {
       width: 60%;
     }

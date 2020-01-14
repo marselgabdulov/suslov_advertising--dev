@@ -24,7 +24,7 @@ function IndexPage() {
   }
   return (
     <Layout>
-      <SEO title="Аудио и видео реклама в социальной сети ВКонтакте" />
+      <SEO title="Главная" />
       <Intro onClick={() => scrollTo(document.getElementById("contacts"))} />
       <Audio />
       <AudioAdvantages />
