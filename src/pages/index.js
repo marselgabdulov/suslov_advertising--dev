@@ -25,12 +25,14 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <Intro />
+      <Intro onClick={() => scrollTo(document.getElementById("contacts"))} />
       <Audio />
       <AudioAdvantages />
       <Video />
       <VideoAdvantages />
-      <Attention />
+      <Attention
+        onClick={() => scrollTo(document.getElementById("contacts"))}
+      />
       <Stages />
       <Prices />
       <Examples />

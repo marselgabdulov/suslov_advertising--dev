@@ -1,7 +1,8 @@
 import React from "react"
 import "./Attention.scss"
+import Button from "../../../components/Button/Button"
 
-function Attention() {
+function Attention(props) {
   return (
     <div className="attention">
       <p>
@@ -11,7 +12,7 @@ function Attention() {
         Оба вида рекламы для большего эффекта можно озвучить голосами
         профессиональных дикторов
       </p>
-      <button className="button blue">Оставить заявку</button>
+      <Button color="blue" text="Оставить заявку" onClick={props.onClick} />
     </div>
   )
 }

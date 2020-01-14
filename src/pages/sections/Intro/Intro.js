@@ -1,8 +1,9 @@
 import React from "react"
 import "./Intro.scss"
 import IntroImage from "./social-feed.svg"
+import Button from "../../../components/Button/Button"
 
-function Intro() {
+function Intro(props) {
   return (
     <section className="intro" id="intro">
       <div className="intro__text">
@@ -12,8 +13,8 @@ function Intro() {
           бизнеса
         </p>
         <div className="intro__buttons">
-          <button className="button orange">Тест</button>
-          <button className="button blue">Оставить заявку</button>
+          <Button color="orange" text="Тест" />
+          <Button color="blue" text="Оставить заявку" onClick={props.onClick} />
         </div>
       </div>
       <div
