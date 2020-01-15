@@ -11,7 +11,7 @@ function Contacts() {
             <a href="tel:+7-926-393-0652">8 926 393-06-52</a>
           </span>
           <span className="contacts__email">
-            <a href="mailto:avsuslov2017@ya.ru">avsuslov2017@ya.ru</a>
+            <a href="mailto:mreklama-da@ya.ru">mreklama-da@ya.ru</a>
           </span>
         </div>
       </div>

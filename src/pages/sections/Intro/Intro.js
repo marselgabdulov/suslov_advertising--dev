@@ -1,20 +1,23 @@
-import React, { useContext } from "react"
+import React from "react"
 import "./Intro.scss"
 import IntroImage from "./social-feed.svg"
-import Button from "../../../components/Button/Button"
 
-function Intro(props) {
+function Intro() {
   return (
     <section className="intro" id="intro">
       <div className="intro__text">
-        <h1>Аудио и видео реклама в социальной сети ВКонтакте</h1>
+        <h1>Продвигайте свой бренд в ВКонтакте</h1>
         <p>
-          Пройдите тест, чтобы узнать подходит ли данная реклама для вашего
-          бизнеса
+          Создаем и настраиваем аудио и видео рекламу в социальной сети
+          ВКонтакте. О вас услышат, вас увидят.
         </p>
-        <div className="intro__buttons">
-          <Button color="orange" text="Тест" />
-          <Button color="blue" text="Оставить заявку" onClick={props.onClick} />
+        <div className="intro__links">
+          <a href="mailto:mreklama-da@ya.ru" className="intro__email">
+            mreklama-da@ya.ru
+          </a>
+          <a href="tel:+7-926-393-0652" className="intro__phone">
+            8 926 393-06-52
+          </a>
         </div>
       </div>
       <div

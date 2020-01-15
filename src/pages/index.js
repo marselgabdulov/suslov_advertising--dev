@@ -15,24 +15,15 @@ import Examples from "./sections/Examples/Examples"
 import Contacts from "./sections/Contacts/Contacts"
 
 function IndexPage() {
-  function scrollTo(element) {
-    window.scroll({
-      behavior: "smooth",
-      left: 0,
-      top: element.offsetTop - 100,
-    })
-  }
   return (
     <Layout>
       <SEO title="Главная" />
-      <Intro onClick={() => scrollTo(document.getElementById("contacts"))} />
+      <Intro />
       <Audio />
       <AudioAdvantages />
       <Video />
       <VideoAdvantages />
-      <Attention
-        onClick={() => scrollTo(document.getElementById("contacts"))}
-      />
+      <Attention />
       <Stages />
       <Prices />
       <Examples />

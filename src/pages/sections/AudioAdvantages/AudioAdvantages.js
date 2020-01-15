@@ -4,7 +4,7 @@ import "./AudioAdvantages.scss"
 function AudioAdvantages() {
   return (
     <section className="audio__advantages">
-      <h2>Плюсы аудио рекламы</h2>
+      <h3>Плюсы аудио рекламы</h3>
       <ul>
         <li>
           <b>Выделяет среди конкурентов</b>

@@ -4,7 +4,7 @@ import "./VideoAdvantages.scss"
 function VideoAdvantages() {
   return (
     <section className="video__advantages">
-      <h2>Плюсы видео рекламы</h2>
+      <h3>Плюсы видео рекламы</h3>
       <ul>
         <li>
           <b>Рядом с крупными брендами</b>
