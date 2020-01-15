@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://reklama-da/sitemap.xml
+Host: https://reklama-da.ru
