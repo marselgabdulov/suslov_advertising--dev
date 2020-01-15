@@ -4,6 +4,7 @@ module.exports = {
     title: `Аудио и видео реклама в социальной сети ВКонтакте`,
     description: `Аудио и видео реклама в социальной сети ВКонтакте. 8 926 393-06-52`,
     author: `marsel.gabdulov@gmail.com`,
+    siteUrl: `https://reklama-da.ru`,
   },
   plugins: [
     `gatsby-plugin-sass`,
