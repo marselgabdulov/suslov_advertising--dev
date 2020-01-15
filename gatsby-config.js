@@ -37,7 +37,7 @@ module.exports = {
           {
             family: `Montserrat`,
             subsets: [`cyrillic`],
-            variants: [`400`, `700`, `900`],
+            variants: [`400`, `600`, `900`],
           },
         ],
       },
