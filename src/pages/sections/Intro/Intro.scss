@@ -34,8 +34,6 @@
   .intro {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-left: 10%;
     margin-top: 0em;
     height: auto;
   }
@@ -58,10 +56,13 @@
   .intro {
     display: flex;
     flex-direction: column-reverse;
-    width: 80%;
-    margin-left: 10%;
     margin-top: 2em;
     height: auto;
+
+    h1,
+    p {
+      text-align: center;
+    }
   }
 
   .intro__text {
@@ -90,11 +91,9 @@
   .intro {
     display: flex;
     flex-direction: column-reverse;
-    width: 80%;
-    margin-left: 10%;
     margin-top: 2em;
     height: auto;
-    text-align: left;
+    text-align: center;
   }
 
   .intro__text {
@@ -109,8 +108,10 @@
   }
 
   .intro__links {
-    width: 95%;
+    width: 80%;
     font-size: 21px;
+    margin-left: 10%;
+    margin-top: 1em;
     justify-content: space-between;
   }
 }
@@ -120,8 +121,6 @@
   .intro {
     display: flex;
     flex-direction: column-reverse;
-    width: 90%;
-    margin-left: 5%;
     margin-top: 2em;
     height: auto;
     text-align: center;
@@ -141,6 +140,7 @@
   .intro__links {
     width: 100%;
     font-size: 21px;
+    margin-left: 0;
     justify-content: space-around;
   }
 }
@@ -150,8 +150,6 @@
   .intro {
     display: flex;
     flex-direction: row;
-    width: 90%;
-    margin-left: 10%;
     margin-top: 10em;
     height: auto;
     text-align: left;
@@ -180,9 +178,8 @@
   .intro {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin-left: 20%;
     margin-top: 10em;
+    width: 75%;
     height: auto;
     text-align: left;
   }
@@ -193,7 +190,7 @@
 
   .intro__image {
     height: 50vh;
-    width: 45%;
+    width: 55%;
   }
 
   .intro__links {

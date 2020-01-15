@@ -40,17 +40,12 @@
 
 // tablet-landscape
 @media (min-width: 900px) {
-  .prices {
-    width: 90%;
-    margin-left: 5%;
-  }
+  .prices {}
 }
 
 // desktop/laptop
 @media (min-width: 1200px) {
   .prices {
-    width: 80%;
-    margin-left: 10%;
     margin-top: 0em;
   }
 }
@@ -58,8 +53,6 @@
 // desktop x-large
 @media (min-width: 1800px) {
   .prices {
-    width: 60%;
-    margin-left: 20%;
     margin-top: 0;
   }
 
