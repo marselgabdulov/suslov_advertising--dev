@@ -11,10 +11,6 @@ function Examples() {
   return (
     <section className="examples" id="examples">
       <h2 style={{ textAlign: "center" }}>Примеры работ</h2>
-      <AudioControl srcMP3={AudioOne} id="audio-one" />
-      <br />
-      <AudioControl srcMP3={AudioTwo} id="audio-two" />
-      <VideoControl srcMP4={VideoOne} srcWEBM={VideoOneWebM} id="video-one" />
     </section>
   )
 }
