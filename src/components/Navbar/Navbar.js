@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./Navbar.scss"
 import Logo from "../Logo/Logo"
 
@@ -10,6 +10,10 @@ function Navbar() {
       top: element.offsetTop - 100,
     })
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <nav className="navbar">
       <div className="navbar__wrapper">
