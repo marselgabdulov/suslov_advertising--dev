@@ -11,14 +11,11 @@ function Attention(props) {
         Оба вида рекламы для большего эффекта можно озвучить голосами
         профессиональных дикторов
       </p>
-      <form action="mailto:mreklama-da@ya.ru" className="attention__mail">
-        <input
-          type="submit"
-          name="submit"
-          value="напишите нам"
-          className="attention__button"
-        />
-      </form>
+      <div className="attention__mail">
+        <a className="attention__button" href="mailto:mreklama-da@ya.ru">
+          напишите нам
+        </a>
+      </div>
     </div>
   )
 }
