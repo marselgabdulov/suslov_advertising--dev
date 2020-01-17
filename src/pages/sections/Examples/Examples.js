@@ -6,6 +6,7 @@ function Examples() {
     <section className="examples" id="examples">
       <h2 style={{ textAlign: "center" }}>Примеры работ</h2>
       <iframe
+        title="Росток новогодняя с музыкой"
         width="100%"
         height="23%"
         scrolling="no"
@@ -15,6 +16,7 @@ function Examples() {
       ></iframe>
       <br />
       <iframe
+        title="Росток с музыкой"
         width="100%"
         height="23%"
         scrolling="no"
@@ -24,6 +26,7 @@ function Examples() {
       ></iframe>
       <br />
       <iframe
+        title="Angel8"
         width="100%"
         height="53%%"
         src="https://www.youtube.com/embed/zVxlVbssCMk"

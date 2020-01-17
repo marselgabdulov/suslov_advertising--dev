@@ -17,7 +17,7 @@ import Contacts from "./sections/Contacts/Contacts"
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="Главная" />
+      <SEO title="Аудио и видео реклама в социальной сети ВКонтакте" />
       <Intro />
       <Audio />
       <AudioAdvantages />
