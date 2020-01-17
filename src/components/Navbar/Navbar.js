@@ -23,13 +23,13 @@ function Navbar() {
             className="navbar__link"
             onClick={() => scrollTo(document.getElementById("audio"))}
           >
-            Аудио реклама
+            Аудиореклама
           </span>
           <span
             className="navbar__link"
             onClick={() => scrollTo(document.getElementById("video"))}
           >
-            Видео реклама
+            Видеореклама
           </span>
           <span
             className="navbar__link"
