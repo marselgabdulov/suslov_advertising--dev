@@ -19,7 +19,7 @@ function Contacts() {
             <a href="https://wa.me/79263930652">
               <Whatsapp />
             </a>
-            <a href="tg://resolve?domain=@marsgabdulov">
+            <a href="tg://resolve?domain=@mreklamada">
               <Telegram />
             </a>
           </div>
