@@ -1,5 +1,7 @@
 import React from "react"
 import "./Contacts.scss"
+import Telegram from "../../../images/telegram.svg"
+import Whatsapp from "../../../images/whatsapp.svg"
 
 function Contacts() {
   return (
@@ -13,6 +15,14 @@ function Contacts() {
           <span className="contacts__email">
             <a href="mailto:mreklama-da@ya.ru">mreklama-da@ya.ru</a>
           </span>
+          <div className="contacts__messengers">
+            <a href="https://wa.me/79263930652">
+              <Whatsapp />
+            </a>
+            <a href="tg://resolve?domain=@marsgabdulov">
+              <Telegram />
+            </a>
+          </div>
         </div>
       </div>
     </section>
