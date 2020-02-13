@@ -11,7 +11,7 @@ function Footer() {
         <span className="footer__author">
           Разработано &nbsp;
           <a
-            href="https://marselgabdulov.github.io/personal/"
+            href="https://marsdev.ru/"
             target="_blank"
             rel="noopener noreferrer"
             title="контакты разработчика"
